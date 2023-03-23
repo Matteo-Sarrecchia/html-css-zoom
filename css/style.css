@@ -5,30 +5,20 @@
 }
 
 /* container */
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
-    position: relative;
-}
-
-/* container */
 header{
+    height: 50px;
 }
 
 /* speaker */
 .speaker{
     color: white;
     height: 50px;
-    background-color: black;
+    background-color: grey;
     font-size: 20px;
     padding-right: 20px;
     display: flex;
     justify-content: end;    
     align-items: center;
-    position: absolute;
-    top: 0px;
-    left: 0;
     width: 100%;
 }
 
@@ -44,40 +34,71 @@ header{
 }
 
 /* corpo centrale */
-.cell{
-    border: 1px solid black;
-    width: 20%;
-    margin: auto;
-    height: 100%;
-    padding-top: 70px;
-    overflow: scroll;
+main{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    height: calc(100vh - 130px);
+    overflow: auto;
 }
 
-/* footer */
-.foot-row{
-    width: 100%;
-    background-color: blueviolet;
+.cell{
     border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user{
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    background-image: url(../img/icona.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px orange;
+}
+
+.user i{
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 12px;
+    border: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px;
+}
+
+
+/* footer */
+footer{
+    height: 80px;
+}
+
+/* footer contenitore */
+.foot-row{
+    height: 100%;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .foot{
-    width: 30%;
-    height: 70px;
-    border: 1px solid black;
     display: flex;
 }
 
 .icon{
-    width: 50px;
-    border: 2px solid red;
-    text-align: center;
-    background-color: blue;
-    align-items: center;
+    margin-right:10px;
 }
 
 .icon a{
@@ -87,6 +108,7 @@ header{
 .icon-simb, .icon-text{
     color: white;
     display: inline-block;
+    text-align: center;
 }
 
 .icon-simb{
@@ -96,12 +118,25 @@ header{
 
 .icon-text{
     font-size: 15px;
+    min-width: 50px;
+}
+
+.left{
+    width: 20%;
 }
 
 .center{
     justify-content:center;
+    width: 78%;
 }
 
 .right{
     justify-content: end;
+    width: 20%;
+}
+
+.text-red{
+    color: red;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
 }
