@@ -14,20 +14,20 @@
 
 /* container */
 header{
-    width: 100%;
 }
 
 /* speaker */
 .speaker{
     color: white;
+    height: 50px;
     background-color: black;
-    padding: 10px 0;
     font-size: 20px;
-    display: flex;
-    justify-content: end;
     padding-right: 20px;
+    display: flex;
+    justify-content: end;    
+    align-items: center;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
 }
@@ -41,4 +41,67 @@ header{
 .speaker a:hover{
     color: red;
     text-decoration: underline;
+}
+
+/* corpo centrale */
+.cell{
+    border: 1px solid black;
+    width: 20%;
+    margin: auto;
+    height: 100%;
+    padding-top: 70px;
+    overflow: scroll;
+}
+
+/* footer */
+.foot-row{
+    width: 100%;
+    background-color: blueviolet;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot{
+    width: 30%;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.icon{
+    width: 50px;
+    border: 2px solid red;
+    text-align: center;
+    background-color: blue;
+    align-items: center;
+}
+
+.icon a{
+    display: block;
+}
+
+.icon-simb, .icon-text{
+    color: white;
+    display: inline-block;
+}
+
+.icon-simb{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.icon-text{
+    font-size: 15px;
+}
+
+.center{
+    justify-content:center;
+}
+
+.right{
+    justify-content: end;
 }
